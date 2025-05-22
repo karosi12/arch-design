@@ -4,6 +4,9 @@
 
 This document outlines a robust, scalable, secure, and cost-effective cloud architecture for Innovate Inc, leveraging AWS Elastic Kubernetes Service (EKS), Amazon RDS PostgreSQL, and CI/CD best practices.
 
+![High-Level-Design](./three-tier-k8s.drawio.png)
+
+
 
 -  ## Cloud Environment Structure
 
@@ -46,7 +49,7 @@ VPC Architecture - per environment
 - Security Groups per component (e.g: ALB SG, EKS Worker SG).
 - NACLs for subnet-level hardening.
 - WAF + Shield for L7 protection.
-- IAM roles with fine-grained leadt-prividesge access.
+- IAM roles with fine-grained least-priviledge access.
 
 - ## Compute Platform (EKS)
 
